@@ -20,15 +20,19 @@ driverC.maximize_window()
 driverC.find_element_by_css_selector(".fluid").click()
 
 driverC.find_element_by_link_text("Contacts").click()
+driverC.find_element_by_css_selector("a[href='/contacts/new']").click()
+
+
 #driverC.get("https://ui.freecrm.com/contacts")
-driverC.find_element_by_xpath('//td[contains(text(),"mname")]//parent::tr//preceding-sibling::td/div').click()
-try:
-    print(driverC.find_element_by_xpath('//td[contains(text(),"first middle last")]//parent::tr'
-                                    + '//preceding-sibling::td/div/input').is_selected())
-except:
-    print("error")
+# driverC.find_element_by_xpath('//td[contains(text(),"mname")]//parent::tr//preceding-sibling::td/div').click()
+# try:
+#     print(driverC.find_element_by_xpath('//td[contains(text(),"first middle last")]//parent::tr'
+#                                     + '//preceding-sibling::td/div/input').is_selected())
+# except:
+#     print("error")
+#
+# print(driverC.find_element_by_xpath('//td[contains(text(),"fname")]//parent::tr'
+#                                     + '//preceding-sibling::td/div/input').is_selected())
 
-print(driverC.find_element_by_xpath('//td[contains(text(),"fname")]//parent::tr'
-                                    + '//preceding-sibling::td/div/input').is_selected())
-
-driverC.quit()
+# driverC.quit()
+driverC.delete_all_cookies()
