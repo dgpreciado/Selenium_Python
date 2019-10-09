@@ -18,8 +18,8 @@ driverC.delete_all_cookies()
 driverC.get("https://ui.freecrm.com/")
 driverC.maximize_window()
 
-driverC.find_element_by_name('email').send_keys("")
-driverC.find_element_by_name("password").send_keys("")
+driverC.find_element_by_name('email').send_keys("d.gabrielp@hotmail.com")
+driverC.find_element_by_name("password").send_keys("javapomLATX")
 driverC.find_element_by_css_selector(".fluid").click()
 
 driverC.find_element_by_link_text("Contacts").click()
