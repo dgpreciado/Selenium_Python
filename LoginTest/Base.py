@@ -1,8 +1,8 @@
 
 
 class BasePage:
-    creds = ''
     username = ''
+    creds = ''
         # self.driver = webdriver.Chrome('chromedriver.exe')
         # # self.driver = driver
         # self.driver.set_page_load_timeout(30)
