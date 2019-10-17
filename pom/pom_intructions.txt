@@ -1,0 +1,22 @@
+#upgrade pip
+python -m pip install --upgrade pip
+
+# to see what libs you have installed
+pip freeze
+or
+pip list
+
+#install selenium
+pip install selenium
+
+#install pytest
+pip install pytest
+
+# install html reporting lib
+pip install html-testRunner
+
+# set pytest as default runner
+# in pycharm, "File->Settings->Tools->Python Integrated Tools" change default test runner to "pytest"
+
+create 2 directory folders within the project with 1. Pages and 2. Tests
+
